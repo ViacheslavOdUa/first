@@ -1,0 +1,44 @@
+@media (max-width: 1250px ) {
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .header{
+        padding: 130px 0;
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 767px;
+    }
+    .header{
+        padding: 100px 0;
+        &__wrapper{
+            h1{
+                text-align: center;
+                font-size: 40px;
+            }
+        }
+    }
+}
+@media (max-width: 767px ) {
+    .container{
+        max-width: 567px;
+    }
+    .header{
+        padding: 60px 0;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header{
+        &__wrapper{
+            h1{
+                font-size: 34px;
+            }
+        }
+    }
+}

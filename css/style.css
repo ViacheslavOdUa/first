@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 170px 0;
+  margin: 0 0 30px 0;
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__wrapper h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 400;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding: 130px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+
+  .header {
+    padding: 100px 0;
+  }
+  .header__wrapper h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+
+  .header {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .header__wrapper h1 {
+    font-size: 34px;
+  }
+}
+.content__top h2, .content__top p {
+  margin: 0;
+  padding: 0;
+}
+.content__top h2 {
+  font-size: 32px;
+}
+.content__top p {
+  font-size: 18px;
+}
+.content__top .date {
+  margin: 30px 0;
+}
+.content__top .description {
+  margin: 0 0 50px 0;
+}
+.content__bottom h2, .content__bottom p {
+  margin: 0;
+  padding: 0;
+}
+.content__bottom h2 {
+  color: rgb(51, 97, 119);
+}
+.content__bottom p {
+  font-size: 18px;
+  margin: 15px 0 100px 0;
+}
+.content__bottom p a {
+  text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+
+  .content {
+    text-align: center;
+  }
+  .content h2 {
+    font-size: 24px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .content__bottom p {
+    margin: 20px 0 70px 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+.footer {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+}
+.footer__wrapper p {
+  color: #ccc;
+}
+.footer__wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__wrapper ul li {
+  list-style: none;
+}
+.footer__wrapper ul li:not(:last-child) {
+  padding-right: 20px;
+}
+.footer__wrapper ul li a {
+  text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+
+  .footer {
+    padding: 15px 0;
+  }
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer__wrapper p {
+    color: #ccc;
+    padding: 20px 0 0 0;
+  }
+  .footer__wrapper ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer__wrapper ul li:not(:last-child) {
+    padding-right: 10px;
+  }
+  .footer__wrapper ul li a {
+    text-decoration: none;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

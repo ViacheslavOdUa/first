@@ -1,0 +1,36 @@
+.content{
+    &__top{
+        h2, p{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            font-size: 32px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .date{
+            margin: 30px 0;
+        }
+        .description{
+            margin: 0 0 50px 0;
+        }
+    }
+    &__bottom{
+        h2, p{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            color: rgb(51, 97, 119);
+        }
+        p{
+            font-size: 18px;
+            margin: 15px 0 100px 0;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
